@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f3eb">
   <title>Room for Doubt — у каждого своя версия</title>
-  <meta name="description" content="Игра для компании на одном телефоне. Рассказывайте истории, угадывайте тайные карточки и спорьте со ставкой телефона. 2–8 игроков, Android, без записи видео и звука.">
+  <meta name="description" content="Задайте вопрос, ответьте перед камерой и посмотрите игровую догадку телефона. Отдельно доступны игра с друзьями и режим наблюдения. Android, без аккаунта.">
   <meta property="og:title" content="Room for Doubt — у каждого своя версия">
-  <meta property="og:description" content="Один рассказывает. Остальные сомневаются. Игра для компании на одном телефоне.">
+  <meta property="og:description" content="Один вопрос, камера без микрофона и игровая догадка телефона. Игра для друзей и наблюдение доступны отдельно.">
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="alternate" hreflang="en" href="en.html">
-  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/site.css?v=1.1-2">
   <script src="assets/site.js" defer></script>
 </head>
 <body>
@@ -22,8 +22,8 @@
         <span>Room for Doubt<span class="brand-caption">У каждого своя версия</span></span>
       </a>
       <nav class="menu" aria-label="Основная навигация">
-        <a href="#game">Как играть</a>
-        <a href="#about">О приложении</a>
+        <a href="#quick">Проверить ответ</a>
+        <a href="#game">Игра с друзьями</a>
         <a href="privacy.html">Приватность <span aria-hidden="true">↗</span></a>
       </nav>
       <a class="lang" href="en.html" lang="en" aria-label="English version">EN <span aria-hidden="true">↗</span></a>
@@ -33,37 +33,50 @@
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Игра для компании · Android</p>
-        <h1 id="hero-title">Ну да.<br>Так мы и<br><em>поверили.</em></h1>
-        <p class="hero-description">Сможете обмануть друзей? А телефон? Рассказывайте истории, ловите друг друга на выдумках и спорьте с его ставкой.</p>
-        <a class="button" href="#game">Как в это играть <span aria-hidden="true">↗</span></a>
-        <p class="release-note">Скоро в RuStore и Google Play</p>
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Вопрос камере · Игра для компании · Android</p>
+        <h1 id="hero-title">Задайте вопрос.<br>Посмотрите<br><em>версию телефона.</em></h1>
+        <p class="hero-description">Выберите вопрос, передайте телефон участнику и получите игровую догадку камеры. В этом сценарии используется камера, микрофон выключен.</p>
+        <a class="button" href="#quick">Проверить ответ <span aria-hidden="true">↗</span></a>
+        <p class="important-note">Игровая догадка по реакции. Не устанавливает факт лжи.</p>
       </div>
-      <div class="hero-table" aria-label="Карточки игры: честно, придумай и пример вопроса">
+      <div class="hero-table" aria-label="Примеры догадок телефона и вопроса">
         <div class="table-orbit" aria-hidden="true"></div>
-        <div class="role-card role-truth" aria-hidden="true"><span>01 / Ваша роль</span><strong>Честно.</strong><span class="role-mark">✳</span></div>
-        <div class="role-card role-fiction" aria-hidden="true"><span>02 / Ваша роль</span><strong>Придумай.</strong><span class="role-mark">✳</span></div>
+        <div class="role-card role-truth" aria-hidden="true"><span>01 / Версия телефона</span><strong>Верит.</strong><span class="role-mark">✳</span></div>
+        <div class="role-card role-fiction" aria-hidden="true"><span>02 / Версия телефона</span><strong>Подозревает.</strong><span class="role-mark">✳</span></div>
         <div class="hero-question">
           <div class="card-meta"><span>Разминка</span><span aria-hidden="true">✳</span></div>
           <p>Какой самый<br>неожиданный<br><em>талант</em><br>у тебя есть?</p>
           <div class="card-bottom"><span>Room for Doubt</span><span>014</span></div>
         </div>
-        <div class="table-note"><svg viewBox="0 0 76 55" fill="none" aria-hidden="true"><path d="M4 8c1 32 41 40 62 8M53 17l15-6-1 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Звучит правдоподобно.<br>Но это ещё ничего не значит.</span></div>
+        <div class="table-note"><svg viewBox="0 0 76 55" fill="none" aria-hidden="true"><path d="M4 8c1 32 41 40 62 8M53 17l15-6-1 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Или не определится.<br>Догадка не факт.</span></div>
       </div>
       <div class="hero-facts" aria-label="Об игре">
-        <span><b>2–8</b> человек за столом</span><span><b>1</b> телефон на всех</span><span>Без рекламы и аккаунта</span><span class="age">18+</span>
+        <span><b>2–8</b> игроков в игре с друзьями</span><span><b>1</b> телефон на всех</span><span>Без рекламы и аккаунта</span><span class="age">18+</span>
       </div>
+    </section>
+
+    <section id="quick" class="section wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / Один вопрос</p><h2>Камера делает<br><em>игровую догадку.</em></h2></div>
+        <p class="section-intro">Задайте вопрос и передайте телефон участнику. Камера, без микрофона. Каждый новый вопрос начинает новую подготовку.</p>
+      </div>
+      <ol class="rules">
+        <li><span class="step-number">01</span><h3>Выберите вопрос</h3><p>Возьмите лёгкий вопрос или напишите свой. Текст вопроса не входит в сохранённую запись результата.</p></li>
+        <li><span class="step-number">02</span><h3>Подготовьте камеру</h3><p>Сначала участники соглашаются, затем подготовка занимает 45 секунд. После неё ответу нужно около 15 секунд пригодных данных; захват ответа ограничен 30 секундами.</p></li>
+        <li><span class="step-number">03</span><h3>Посмотрите догадку</h3><p>Телефон может поверить, заподозрить ложь, не определиться или не получить результат. Показания экспериментальные и могут быть недоступны.</p></li>
+      </ol>
+      <p class="important-note">Игровая догадка по реакции. Не устанавливает факт лжи и не объясняет причину реакции.</p>
     </section>
 
     <section id="game" class="section wrap">
       <div class="section-heading">
-        <div><p class="eyebrow">01 / Правила вечера</p><h2>Хорошая история.<br><em>Не обязательно правда.</em></h2></div>
+        <div><p class="eyebrow">02 / Игра с друзьями</p><h2>Хорошая история.<br><em>Не обязательно правда.</em></h2></div>
         <p class="section-intro">Передавайте телефон по кругу.<br>Смотрите друг на друга.<br>Сомневаться здесь — часть игры.</p>
       </div>
       <ol class="rules">
         <li><span class="step-number">01</span><h3>Получите карточку</h3><p>«Честно» или «Придумай». Только отвечающий знает, какая роль ему досталась.</p></li>
         <li><span class="step-number">02</span><h3>Расскажите историю</h3><p>Ответьте на вопрос вслух. По-настоящему или очень убедительно — как велит карточка.</p></li>
-        <li><span class="step-number">03</span><h3>Соберите версии</h3><p>Друзья пробуют вас раскусить. Телефон тоже делает ставку по сигналам — или пропускает ход.</p></li>
+        <li><span class="step-number">03</span><h3>Соберите версии</h3><p>В игре с друзьями участники получают приватные роли, отвечают на вопросы, голосуют и получают очки.</p></li>
         <li><span class="step-number">04</span><h3>Раскройте карты</h3><p>Удалось запутать компанию или телефон? Получите очки и передайте ход следующему.</p></li>
       </ol>
     </section>
@@ -71,7 +84,7 @@
     <section class="questions-section" id="questions" aria-labelledby="questions-title">
       <div class="wrap questions-layout">
         <div class="questions-copy">
-          <p class="eyebrow">02 / С чего начать разговор</p>
+          <p class="eyebrow">03 / С чего начать разговор</p>
           <h2 id="questions-title">Есть о чём<br><em>поговорить.</em></h2>
           <p class="section-intro">Три темы под настроение компании.<br>От нелепых историй до того, что не рассказывают при первой встрече.</p>
           <div class="deck-choices" aria-label="Выберите тему вопросов" hidden>
@@ -97,25 +110,25 @@
     <section id="about" class="section wrap">
       <div class="app-layout">
         <div class="app-visual">
-          <span class="visual-label">Один телефон.<br><em>Много версий.</em></span>
-          <div class="phone"><img src="assets/home-ru.png" alt="Главный экран Room for Doubt: режимы «Наблюдение» и «Игра»" width="360" height="800" loading="lazy"></div>
-          <span class="visual-footnote">Настоящий экран приложения / Android</span>
+          <span class="visual-label">Один вопрос.<br><em>Игровая догадка.</em></span>
+          <div class="phone"><img src="assets/home-ru.png" alt="Прежний главный экран приложения до появления сценария «Проверить ответ»" width="360" height="800" loading="lazy"></div>
+          <span class="visual-footnote">Архивный экран прежней версии / Android</span>
           <svg class="signal-line" viewBox="0 0 420 110" fill="none" aria-hidden="true"><path d="M0 67h76l14-10 19 19 22-57 22 85 18-38 26 1 18-20 17 20h188" stroke="currentColor" stroke-width="2"/></svg>
         </div>
         <div class="app-copy">
-          <p class="eyebrow">03 / Ещё один участник</p>
-          <h2>Друзья поверили.<br><em>А телефон?</em></h2>
-          <p class="section-intro">Телефон играет в «детектор лжи»: замечает изменения пульса, голоса и движений и пробует угадать, что у вас на карточке. Убедительная история — это только полдела. Попробуйте запутать ещё и его.</p>
-          <div class="signal-list" aria-label="Сигналы приложения"><span>Пульс</span><span>Голос</span><span>Движение</span><span>Зрачок</span><span>Выражение лица <small>демо</small></span></div>
-          <p class="important-note">Настоящую ложь приложение не определяет. Ставка — часть игры: телефон может ошибиться или пропустить ход. Сигналы экспериментальные и могут быть недоступны.</p>
-          <div class="live-note" id="live"><span class="mini-label">А если без игры?</span><h3>Есть режим «Наблюдение»</h3><p>Для двоих, с согласия человека в кадре. 45 секунд на личную норму, затем до пяти минут наблюдения за изменениями. Без выводов об эмоциях или здоровье.</p></div>
+          <p class="eyebrow">04 / Отдельные режимы</p>
+          <h2>Игра с друзьями<br><em>и «Наблюдение».</em></h2>
+          <p class="section-intro">«Проверить ответ» — отдельный сценарий одного вопроса: камера без микрофона и новая подготовка для каждого ответа. Игра с друзьями — отдельная игра с ролями, голосованием и очками. «Наблюдение» отдельно показывает изменения реакции после подготовки.</p>
+          <div class="signal-list" aria-label="Сигналы отдельных режимов"><span>Пульс</span><span>Голос в отдельных режимах</span><span>Движение</span><span>Зрачок</span><span>Выражение лица <small>демо в «Наблюдении»</small></span></div>
+          <p class="important-note">Игровая догадка по реакции не устанавливает факт лжи. «Проверить ответ», «Игра с друзьями» и «Наблюдение» — отдельные режимы.</p>
+          <div class="live-note" id="live"><span class="mini-label">Отдельный режим</span><h3>«Наблюдение»</h3><p>С согласия человека в кадре: 45 секунд на личный исходный уровень, затем до пяти минут наблюдения за изменениями. Без выводов об эмоциях или здоровье.</p></div>
         </div>
       </div>
     </section>
 
     <section id="privacy" class="privacy-section">
       <div class="wrap">
-        <div class="section-heading"><div><p class="eyebrow">04 / Личное остаётся личным</p><h2>Ваши истории —<br><em>вашей компании.</em></h2></div><p class="section-intro">Камера и микрофон работают на устройстве.<br>Без аккаунта, рекламы и сервера RFD.</p></div>
+        <div class="section-heading"><div><p class="eyebrow">05 / Личное остаётся личным</p><h2>Ваши истории —<br><em>вашей компании.</em></h2></div><p class="section-intro">Обработка выполняется на устройстве.<br>В «Проверить ответ» используется камера без микрофона.</p></div>
         <div class="privacy-points">
           <div><span class="privacy-symbol" aria-hidden="true">↳</span><h3>Без записи видео и звука</h3><p>Исходные кадры и аудио обрабатываются в памяти и не сохраняются в файлы.</p></div>
           <div><span class="privacy-symbol" aria-hidden="true">↳</span><h3>Работает без интернета</h3><p>У приложения нет разрешения на интернет. Аккаунт для игры тоже не нужен.</p></div>
@@ -128,11 +141,11 @@
     <section id="faq" class="section wrap faq-layout">
       <div><p class="eyebrow">Перед первым раундом</p><h2>Пара<br> <em>вопросов.</em></h2></div>
       <div class="faq">
-        <details><summary>Где скачать приложение?</summary><p>Готовим публикацию в RuStore и Google Play. Здесь появятся ссылки, когда приложение станет доступно. Оно будет бесплатным, без рекламы.</p></details>
+        <details><summary>Где скачать приложение?</summary><p>Статус версии зависит от магазина. RuStore: опубликована версия 1.0. Google Play: идёт набор тестировщиков.</p></details>
         <details><summary>Сколько человек может играть?</summary><p>От двух до восьми, на одном телефоне. Все участники должны быть не младше 18 лет и согласиться на участие.</p></details>
         <details><summary>На каком телефоне работает?</summary><p>На Android 9 и новее, с фронтальной или основной камерой. Ровный свет и спокойное положение телефона помогают получить более стабильные сигналы.</p></details>
-        <details><summary>Можно выключить микрофон?</summary><p>Да, в режиме «Наблюдение»: отключите «Анализ голоса» в настройках. Голос будет отмечен как выключенный и не будет участвовать в сводке.</p></details>
-        <details><summary>Что остаётся после наблюдения?</summary><p>По умолчанию сводка исчезает после сеанса. Сохранить её можно, только если включить эту возможность в настройках и отдельно нажать «Сохранить». Это локальная запись показателей сводки, без видео и звука.</p></details>
+        <details><summary>Можно выключить микрофон?</summary><p>Да. В основном сценарии «Проверить ответ» микрофон выключен. В отдельном режиме «Наблюдение» отключите «Анализ голоса» в настройках; это не меняет работу других сценариев.</p></details>
+        <details><summary>Что остаётся после вопроса или наблюдения?</summary><p>Общая настройка сохранения сводок выключена по умолчанию. При её включении каждый результат «Проверить ответ» всё равно сохраняется только после отдельного нажатия «Сохранить». Игра с друзьями и «Наблюдение» остаются отдельными режимами. В записи остаются версия формата и правила, время и длительность, исход, причина отсутствия результата и названия участвовавших факторов — без текста вопроса, имени или сенсорных значений. Сводка «Наблюдения» тоже требует отдельного действия «Сохранить».</p></details>
         <details><summary>Почему телефон иногда пропускает ход?</summary><p>Свет, шум, движение или лицо вне кадра могут сделать данные ненадёжными. В таком случае приложение сообщает, что данных недостаточно.</p></details>
       </div>
     </section>
